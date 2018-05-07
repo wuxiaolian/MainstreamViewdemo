@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JHMainTabbarViewController.h
 //  MainstreamViewdemo
 //
 //  Created by Wuxiaolian on 2018/5/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JHMainTabbarViewController : UITabBarController
 
 @end
-
