@@ -142,7 +142,8 @@
 				F399A37B20A0461B00CD757F /* AppDelegate.h */,
 				F399A37C20A0461B00CD757F /* AppDelegate.m */,
 			);
-			path = AppDelegate;
+			name = AppDelegate;
+			path = Appdelegate;
 			sourceTree = "<group>";
 		};
 		F399A3B320A0470800CD757F /* Class */ = {
