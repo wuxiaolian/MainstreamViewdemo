@@ -7,6 +7,8 @@
 //
 
 #import "JHMainTabbarViewController.h"
+#import "JHHomeViewController.h"
+#import "JHMyViewController.h"
 
 @interface JHMainTabbarViewController ()
 
@@ -16,22 +18,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+    // 1.添加第一个控制器
+    // 1.1 初始化
+    JHHomeViewController *oneVC = [[JHHomeViewController alloc]init];
+    [self setUpOneChildViewController:oneVC image:[UIImage imageNamed:@""] title:@"首页"];    // 2.添加第2个控制器
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+    // 2.添加第2个控制器
+    JHMyViewController *twoVC = [[JHMyViewController alloc]init];
+    [self setUpOneChildViewController:twoVC image:[UIImage imageNamed:@""] title:@"我的"];    // 2.添加第2个控制器
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+/**
+   *  添加一个子控制器的方法
+   */- (void)setUpOneChildViewController:(UIViewController *)viewController image:(UIImage *)image title:(NSString *)title{
+       UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:viewController];
+       navC.title = title;
+       navC.tabBarItem.image = image;
+       [navC.navigationBar setBackgroundImage:[UIImage imageNamed:@"commentary_num_bg"] forBarMetrics:UIBarMetricsDefault];
+       
+       viewController.navigationItem.title = title;
+       
+       [self addChildViewController:navC];
+   }
 
 @end

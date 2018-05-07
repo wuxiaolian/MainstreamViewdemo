@@ -10,13 +10,13 @@
 		F399A37D20A0461B00CD757F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F399A37C20A0461B00CD757F /* AppDelegate.m */; };
 		F399A38320A0461B00CD757F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399A38120A0461B00CD757F /* Main.storyboard */; };
 		F399A38520A0461B00CD757F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F399A38420A0461B00CD757F /* Assets.xcassets */; };
-		F399A38820A0461B00CD757F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399A38620A0461B00CD757F /* LaunchScreen.storyboard */; };
 		F399A38B20A0461B00CD757F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F399A38A20A0461B00CD757F /* main.m */; };
 		F399A39520A0461B00CD757F /* MainstreamViewdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F399A39420A0461B00CD757F /* MainstreamViewdemoTests.m */; };
 		F399A3A020A0461B00CD757F /* MainstreamViewdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F399A39F20A0461B00CD757F /* MainstreamViewdemoUITests.m */; };
 		F399A3B720A0475800CD757F /* JHMainTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F399A3B620A0475800CD757F /* JHMainTabbarViewController.m */; };
 		F399A3BA20A047A100CD757F /* JHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F399A3B920A047A100CD757F /* JHHomeViewController.m */; };
 		F399A3BE20A047BB00CD757F /* JHMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F399A3BD20A047BB00CD757F /* JHMyViewController.m */; };
+		F399A3C520A04A9400CD757F /* JHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F399A3C420A04A9400CD757F /* JHBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		F399A37C20A0461B00CD757F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F399A38220A0461B00CD757F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F399A38420A0461B00CD757F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F399A38720A0461B00CD757F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F399A38920A0461B00CD757F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F399A38A20A0461B00CD757F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F399A39020A0461B00CD757F /* MainstreamViewdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainstreamViewdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +56,8 @@
 		F399A3B920A047A100CD757F /* JHHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHHomeViewController.m; sourceTree = "<group>"; };
 		F399A3BC20A047BB00CD757F /* JHMyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHMyViewController.h; sourceTree = "<group>"; };
 		F399A3BD20A047BB00CD757F /* JHMyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHMyViewController.m; sourceTree = "<group>"; };
+		F399A3C320A04A9400CD757F /* JHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHBaseViewController.h; sourceTree = "<group>"; };
+		F399A3C420A04A9400CD757F /* JHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +110,8 @@
 			children = (
 				F399A3AF20A0467C00CD757F /* AppDelegate */,
 				F399A3B320A0470800CD757F /* Class */,
-				F399A38120A0461B00CD757F /* Main.storyboard */,
+				F399A3C220A04A6800CD757F /* Base Class */,
 				F399A38420A0461B00CD757F /* Assets.xcassets */,
-				F399A38620A0461B00CD757F /* LaunchScreen.storyboard */,
 				F399A38920A0461B00CD757F /* Info.plist */,
 				F399A38A20A0461B00CD757F /* main.m */,
 			);
@@ -160,6 +160,7 @@
 			children = (
 				F399A3B520A0475800CD757F /* JHMainTabbarViewController.h */,
 				F399A3B620A0475800CD757F /* JHMainTabbarViewController.m */,
+				F399A38120A0461B00CD757F /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -180,6 +181,15 @@
 				F399A3BD20A047BB00CD757F /* JHMyViewController.m */,
 			);
 			path = My;
+			sourceTree = "<group>";
+		};
+		F399A3C220A04A6800CD757F /* Base Class */ = {
+			isa = PBXGroup;
+			children = (
+				F399A3C320A04A9400CD757F /* JHBaseViewController.h */,
+				F399A3C420A04A9400CD757F /* JHBaseViewController.m */,
+			);
+			path = "Base Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +299,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F399A38820A0461B00CD757F /* LaunchScreen.storyboard in Resources */,
 				F399A38520A0461B00CD757F /* Assets.xcassets in Resources */,
 				F399A38320A0461B00CD757F /* Main.storyboard in Resources */,
 			);
@@ -321,6 +330,7 @@
 				F399A3BE20A047BB00CD757F /* JHMyViewController.m in Sources */,
 				F399A37D20A0461B00CD757F /* AppDelegate.m in Sources */,
 				F399A3BA20A047A100CD757F /* JHHomeViewController.m in Sources */,
+				F399A3C520A04A9400CD757F /* JHBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,14 +372,6 @@
 				F399A38220A0461B00CD757F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F399A38620A0461B00CD757F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F399A38720A0461B00CD757F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -483,7 +485,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79YAW92JE;
 				INFOPLIST_FILE = MainstreamViewdemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,7 +501,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79YAW92JE;
 				INFOPLIST_FILE = MainstreamViewdemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

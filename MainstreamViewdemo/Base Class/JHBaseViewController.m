@@ -1,22 +1,22 @@
 //
-//  JHHomeViewController.m
+//  JHBaseViewController.m
 //  MainstreamViewdemo
 //
 //  Created by Wuxiaolian on 2018/5/7.
 //  Copyright © 2018年 Wu. All rights reserved.
 //
 
-#import "JHHomeViewController.h"
+#import "JHBaseViewController.h"
 
-@interface JHHomeViewController ()
+@interface JHBaseViewController ()
 
 @end
 
-@implementation JHHomeViewController
+@implementation JHBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
